@@ -1,0 +1,8 @@
+#{{ student }}
+
+<h1>{{ student.student_firstName }}</h1>
+<ul>
+{% for telefon in student.telefon_set.all %}
+    <li>{{ telefon.telefon_text }}</li>
+{% endfor %}
+</ul>
